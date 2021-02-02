@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:khrub_food/src/widgets/custom_app_bar.dart';
+import 'package:khrub_food/src/widgets/dish_details.dart';
 import 'package:khrub_food/src/widgets/dish_grid_item.dart';
 
 class Home extends StatelessWidget {
@@ -13,9 +14,8 @@ class Home extends StatelessWidget {
           title: "KhrubFood",
         ),
       ),
-      body: DishGridItem(
-        image: "moo-daeng.jpg",
-      ),
+      body: DishDetails(
+          image: "moo-daeng.jpg", name: "Moo Daeng", nameTh: "same-in-thai"),
     );
   }
 }
