@@ -10,6 +10,7 @@ class CustomAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
+      backgroundColor: Colors.red[900],
       title: CustomText(text: title, color: Colors.white, size: 24),
     );
   }
