@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:khrub_food/src/widgets/custom_app_bar.dart';
+import 'package:khrub_food/src/widgets/dish_grid_item.dart';
 
 class Home extends StatelessWidget {
   @override
@@ -11,6 +12,9 @@ class Home extends StatelessWidget {
         child: CustomAppBar(
           title: "KhrubFood",
         ),
+      ),
+      body: DishGridItem(
+        image: "moo-daeng.jpg",
       ),
     );
   }
